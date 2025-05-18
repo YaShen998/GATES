@@ -1,0 +1,38 @@
+env:
+  dataGen: 10000
+  evalNum: 1
+  gamma: 1
+  gamma_test: 1
+  gamma_train: 5
+  generateWay: rotation
+  name: WorkflowScheduling-v3
+  seed: 42
+  traffic_pattern: CONSTANT
+  validNum: 30
+  wf_num: 30
+  wf_num_test: 30
+  wf_size: S
+optim:
+  generation_num: 3000
+  input_clip: false
+  input_clip_value_max: null
+  input_clip_value_min: null
+  input_running_mean_std: true
+  learning_rate: 0.001
+  learning_rate_decay: 0.9999
+  maximization: true
+  name: es_openai
+  population_size: 40
+  reinforce_learning_rate: 0.001
+  reward_norm: false
+  reward_shaping: true
+  sigma_decay: 1.0
+  sigma_init: 0.05
+  weight_decay: 0.0
+policy:
+  action_num: 1
+  action_type: greedy
+  add_gru: false
+  discrete_action: true
+  name: model_workflow
+  state_num: 8

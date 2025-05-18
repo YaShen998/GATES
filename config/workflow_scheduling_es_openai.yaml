@@ -1,0 +1,45 @@
+
+env:
+  seed: 42
+  name: WorkflowScheduling-v3
+  traffic_pattern: CONSTANT
+
+  gamma: Null  # Deadline factor for initialize env
+  gamma_train: 5   # Deadline factor for training
+  gamma_test: 1   # Deadline factor for testing during training or after the completed training
+  wf_size: S  # S, M, L: the number of task in one workflow. We always use S in training.
+
+  dataGen: 10000  # How many generations to iterate: the length of generative training dataset, usually >> generation for reproducible
+  wf_num: 30  # The number of workflow in each training problem instance
+  evalNum: 1  # How many problem instances are used to evaluate each individual in training process
+
+  wf_num_test: 30  # The number of workflow in each testing instance
+  validNum: 30  # How many problem instances are used to verify the performance in testing process
+
+  generateWay: rotation
+
+policy:
+  name: model_workflow
+  #  state_num: 8
+  #  action_num: 1
+  #  discrete_action: True
+  add_gru: False
+  action_type: greedy  # greedy or sampling
+
+optim:
+  name: es_openai
+  population_size: 40
+  maximization: True
+  generation_num: 2000
+  input_running_mean_std: True
+  input_clip: False
+  input_clip_value_min: Null
+  input_clip_value_max: Null
+  reward_shaping: True
+  reward_norm: False
+  sigma_init: 0.05  # noise standard deviation
+  sigma_decay: 1.0  # 1.0 means that not deduct the sigma_init
+  learning_rate: 0.001
+  learning_rate_decay: 0.9999
+  reinforce_learning_rate: 0.001
+  weight_decay: 0.0
