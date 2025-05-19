@@ -52,7 +52,7 @@ python eval_rl.py
 After training and testing, results will be saved in the `logs/` directory, including total cost, SLA violations, and VM fees, which can be used for visualization and evaluation.
 
 ## 📚 Citation
-If you find this project is useful in your research, please consider give a star and cite the following papers in your future works:
+If you find this project useful for your research, please consider give a star and cite the following papers in your future works:
 
 ```bibtex
 @inproceedings{huang2022cost,
@@ -81,8 +81,13 @@ If you find this project is useful in your research, please consider give a star
 }
 ```
 
+## 🙋‍♂️ Contact
+If you have any questions or Academic collaboration interests, feel free to reach out:
+
+GitHub: [YaShen998](https://github.com/YaShen998), Email: ya.shen@ecs.vuw.ac.nz
+
 ## 🙏 Acknowledgements
 We gratefully acknowledge the prior works by [Victoria Huang](https://niwa.co.nz/people/victoria-huang), [Chen Wang](https://niwa.co.nz/people/chen-wang), and [Yifan Yang](https://scholar.google.com/citations?user=dO8kmG4AAAAJ&hl=zh-CN), whose codes laid the foundation for this simulator. This work was also supported by the [AI-SCC & Big Data Group](https://ecs.wgtn.ac.nz/Groups/AISCC/WebHome) at Victoria University of Wellington.
 
 ## 📝 License
-This project is licensed under the MIT License. 
+This project is licensed under the MIT License.
