@@ -18,7 +18,7 @@ You can set up the environment using the following methods:
 
 ```bash
 
-conda env create -f environment.yml
+conda env create -f environment.yml -n your-env-name
 
 conda activate your_env_name
 
@@ -45,6 +45,7 @@ python eval_rl.py
 ```
 
 > To run the code in a server, you need to customize `train.py` or `eval_rl.py` to a service script.
+> For multiple independent runs, `main.py` should use a different random seed everytime.
 
 
 ## 📊 Example Output
