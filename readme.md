@@ -1,6 +1,6 @@
   
 # Cost-aware Dynamic Workflow Scheduling via Deep Reinforcement Learning
-This repository hosts the implementation of our two research works in Cost-aware Dynamic Workflow Scheduling:
+This repository hosts the implementation of our several research works in Cost-aware Dynamic Workflow Scheduling:
 
 1. *GATES: Cost-aware Dynamic Workflow Scheduling via Graph Attention Networks and Evolution Strategy,*  
   **To appear in IJCAI 2025.**
