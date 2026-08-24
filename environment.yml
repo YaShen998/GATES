@@ -1,0 +1,15 @@
+name: gates
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip=25.0
+  - setuptools=75.8.0
+  - pip:
+      - gym==0.26.2
+      - networkx==3.3
+      - numpy==1.26.4
+      - pandas==2.2.3
+      - PyYAML==6.0.2
+      - torch==2.6.0
+      - torch-geometric==2.6.1
