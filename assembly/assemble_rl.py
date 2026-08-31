@@ -259,8 +259,6 @@ class AssembleRL(BaseAssembleRL):
 def worker_func(arguments):
     indi, env, optim, eval_ep_num, ob_rms_mean, ob_rms_std, processor_num, g, config, train_or_test = arguments
 
-    env = builder.build_env(config.config, env.train_Set_setting, env.test_Set_setting)
-
     hist_rewards = {}
     hist_obs = {}
     hist_actions = {}
